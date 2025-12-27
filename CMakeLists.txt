@@ -8,6 +8,7 @@ FetchContent_Declare(ftxui
 FetchContent_MakeAvailable(ftxui)
  
 add_executable(main main.cpp)
+set_target_properties(main PROPERTIES OUTPUT_NAME "switcheroo")
 target_link_libraries(main
   PRIVATE ftxui::screen
   PRIVATE ftxui::dom
