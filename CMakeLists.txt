@@ -13,5 +13,12 @@ target_link_libraries(main
   PRIVATE ftxui::screen
   PRIVATE ftxui::dom
   PRIVATE ftxui::component
-  PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/includes/WinDivert.lib
+  PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/bin/WinDivert.lib
+)
+
+# Copy DLL and SYS files to output directory
+add_custom_command(TARGET main POST_BUILD
+  COMMAND ${CMAKE_COMMAND} -E copy_if_different
+  "${CMAKE_CURRENT_SOURCE_DIR}/bin/"
+  $<TARGET_FILE_DIR:main>
 )
