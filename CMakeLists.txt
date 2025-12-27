@@ -16,9 +16,16 @@ target_link_libraries(main
   PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/bin/WinDivert.lib
 )
 
-# Copy DLL and SYS files to output directory
+# Copy DLL to output directory
 add_custom_command(TARGET main POST_BUILD
   COMMAND ${CMAKE_COMMAND} -E copy_if_different
-  "${CMAKE_CURRENT_SOURCE_DIR}/bin/"
+  "${CMAKE_CURRENT_SOURCE_DIR}/bin/WinDivert.dll"
+  $<TARGET_FILE_DIR:main>
+)
+
+# Copy SYS to output directory
+add_custom_command(TARGET main POST_BUILD
+  COMMAND ${CMAKE_COMMAND} -E copy_if_different
+  "${CMAKE_CURRENT_SOURCE_DIR}/bin/WinDivert.sys"
   $<TARGET_FILE_DIR:main>
 )

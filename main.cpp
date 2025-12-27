@@ -14,7 +14,6 @@
 #include "include/windivert.h"
 #include <windows.h>
 
-
 using namespace ftxui;
 
 HANDLE g_hFilter = INVALID_HANDLE_VALUE;
