@@ -19,3 +19,6 @@ Set of common possible errors below:
 |---:|---|
 | 2 | Either WinDivert.dll or WinDivert.sys is not in same folder |
 | 5 | Acess denied (You need to run as administrator) |
+
+
+*For educational purposes only on my end, you are responsible if it is misused*
