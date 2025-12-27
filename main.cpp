@@ -4,6 +4,8 @@
 #include "ftxui/component/screen_interactive.hpp"
 #include "ftxui/dom/elements.hpp"
 
+#include "windivert.h"
+
 #include <memory>
 #include <string>
 
