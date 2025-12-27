@@ -13,4 +13,5 @@ target_link_libraries(main
   PRIVATE ftxui::screen
   PRIVATE ftxui::dom
   PRIVATE ftxui::component
+  PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/includes/WinDivert.lib
 )
