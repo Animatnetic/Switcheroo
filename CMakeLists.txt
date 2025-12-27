@@ -26,6 +26,6 @@ add_custom_command(TARGET main POST_BUILD
 # Copy SYS to output directory
 add_custom_command(TARGET main POST_BUILD
   COMMAND ${CMAKE_COMMAND} -E copy_if_different
-  "${CMAKE_CURRENT_SOURCE_DIR}/bin/WinDivert.sys"
+  "${CMAKE_CURRENT_SOURCE_DIR}/bin/WinDivert64.sys"
   $<TARGET_FILE_DIR:main>
 )
