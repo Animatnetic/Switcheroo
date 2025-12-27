@@ -4,6 +4,8 @@ Minimalist Lag Switch
 
 ## Description
 Inspired by clumsy, but I wanted an even simpler interface. Uses WinDivert for packet dropping and FTXUI for the TUI.
+Only works in Windows (tested on Windows 11) with 64 bit architecture.
+Fairly sure it works in: Windows 10, 8 and 7
 
 ## Usage
 1. Go To Releases
